@@ -1,0 +1,10 @@
+{
+  "name": "esse3-auto-login",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "~2.0.2",
+    "angular": "~1.0.7",
+    "bootstrap": "~2.3.2"
+  }
+}
