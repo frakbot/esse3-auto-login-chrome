@@ -17,7 +17,7 @@ function Prefs() {
     };
 
     this.PORTAL = 'portal';
-    this.STUDENT_ID = 'student_id';
+    this.STUDENT_ID = 'studentId';
     this.CREDENTIALS = 'credentials';
 }
 

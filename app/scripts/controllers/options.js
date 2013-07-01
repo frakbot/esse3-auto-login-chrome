@@ -24,7 +24,6 @@ angular.module('esse3AutoLoginApp')
                     $scope.portal = _portal;
                     $scope.$apply();
                     $scope.$watch('portal', function(newValue, oldValue) {
-                        if (newValue === oldValue) { return; }
                         console.log('portal has changed');
                         $scope.saving++;
                         prefs.setPortal(newValue, function() {
@@ -39,7 +38,6 @@ angular.module('esse3AutoLoginApp')
                     $scope.credentials = _credentials;
                     $scope.$apply();
                     $scope.$watch('credentials.username', function(newValue, oldValue) {
-                        if (newValue === oldValue) { return; }
                         console.log('credentials has changed');
                         $scope.saving++;
                         prefs.setCredentials($scope.credentials, function() {
@@ -48,7 +46,6 @@ angular.module('esse3AutoLoginApp')
                         });
                     });
                     $scope.$watch('credentials.password', function(newValue, oldValue) {
-                        if (newValue === oldValue) { return; }
                         console.log('credentials has changed');
                         $scope.saving++;
                         prefs.setCredentials($scope.credentials, function() {
@@ -63,7 +60,6 @@ angular.module('esse3AutoLoginApp')
                     $scope.studentId = _studentId;
                     $scope.$apply();
                     $scope.$watch('studentId', function(newValue, oldValue) {
-                        if (newValue === oldValue) { return; }
                         console.log('studentId has changed');
                         $scope.saving++;
                         prefs.setStudentId(newValue, function() {

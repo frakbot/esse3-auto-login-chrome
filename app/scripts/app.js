@@ -3,7 +3,7 @@
 /* global angular */
 
 angular.module('esse3AutoLoginApp', [])
-    .config(function ($routeProvider) {
+    .config(['$routeProvider', function ($routeProvider) {
         $routeProvider
             .when('/settings', {
                 templateUrl: 'views/options.html',
@@ -16,4 +16,4 @@ angular.module('esse3AutoLoginApp', [])
             .otherwise({
                 redirectTo: '/settings'
             });
-    });
+    }]);
