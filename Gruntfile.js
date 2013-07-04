@@ -23,7 +23,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         yeoman: yeomanConfig,
-        pkg: grunt.file.readJSON('package.json'),
+        pkg: grunt.file.readJSON('app/manifest.json'),
         watch: {
             options: {
                 spawn: false
@@ -247,6 +247,14 @@ module.exports = function (grunt) {
             ]
         },
         chromeManifest: {
+            testbuild: {
+                options: {
+                    buildnumber: false,
+                    background: 'scripts/background.js'
+                },
+                src: '<%= yeoman.app %>',
+                dest: '<%= yeoman.dist %>'
+            },
             dist: {
                 options: {
                     buildnumber: true,
@@ -276,6 +284,19 @@ module.exports = function (grunt) {
         'concurrent:test',
         'connect:test',
         'mocha'
+    ]);
+
+    grunt.registerTask('testbuild', [
+        'clean:dist',
+        'chromeManifest:testbuild',
+        'useminPrepare',
+        'concurrent:dist',
+        'cssmin',
+        'concat',
+        'uglify',
+        'copy',
+        'usemin',
+        'compress'
     ]);
 
     grunt.registerTask('build', [

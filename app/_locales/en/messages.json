@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "esse3 Auto Login",
-    "description": "The name of the application"
+    "message": "Esse3 Auto Login",
+    "description": "Esse3 Auto Login"
   },
   "appDescription": {
-    "message": "Auto Login feature for esse3 portals: no more annoying login requests on esse3!",
-    "description": "esse3 Auto Login intercepts those annoying login requests and logs you in automatically, on every access."
+    "message": "Auto Login feature for Esse3 portals: no more annoying login requests on esse3!",
+    "description": "Esse3 Auto Login intercepts those annoying login requests and logs you in automatically."
   }
 }
