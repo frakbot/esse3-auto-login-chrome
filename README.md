@@ -11,15 +11,15 @@ Istruzioni
 ----------
 
 1. Installare l'estensione dal [Chrome Web Store]().
-2. Andare nelle impostazioni ed impostare
+2. Andare nelle impostazioni ed inserire
 	* username e password
-	* indirizzo del portale esse3, ad esempio `http://www.studenti.ict.uniba.it/`
+	* indirizzo del portale esse3 comprensivo di slash "/" finale, ad esempio `http://www.studenti.ict.uniba.it/`
 	* matricola, opzionale se si vuole aprire sempre un libretto, nel caso si abbiano più iscrizioni
 
 Versione
 --------
 
-Ultima versione: **1.0.0** del 01/07/2013, compatibile con Esse3 v11.04.01.
+Ultima versione: **1.0.0** del 05/07/2013, compatibile con Esse3 v11.04.01.
 Per il changelog completo guarda [CHANGELOG.md](CHANGELOG.md).
 
 Autore

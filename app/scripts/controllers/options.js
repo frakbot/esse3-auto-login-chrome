@@ -23,7 +23,7 @@ angular.module('esse3AutoLoginApp')
                 prefs.getPortal(function(_portal) {
                     $scope.portal = _portal;
                     $scope.$apply();
-                    $scope.$watch('portal', function(newValue, oldValue) {
+                    $scope.$watch('portal', function(newValue) {
                         console.log('portal has changed');
                         $scope.saving++;
                         prefs.setPortal(newValue, function() {
@@ -37,7 +37,7 @@ angular.module('esse3AutoLoginApp')
                 prefs.getCredentials(function(_credentials) {
                     $scope.credentials = _credentials;
                     $scope.$apply();
-                    $scope.$watch('credentials.username', function(newValue, oldValue) {
+                    $scope.$watch('credentials.username', function() {
                         console.log('credentials has changed');
                         $scope.saving++;
                         prefs.setCredentials($scope.credentials, function() {
@@ -45,7 +45,7 @@ angular.module('esse3AutoLoginApp')
                             $scope.$apply();
                         });
                     });
-                    $scope.$watch('credentials.password', function(newValue, oldValue) {
+                    $scope.$watch('credentials.password', function() {
                         console.log('credentials has changed');
                         $scope.saving++;
                         prefs.setCredentials($scope.credentials, function() {
@@ -59,7 +59,7 @@ angular.module('esse3AutoLoginApp')
                 prefs.getStudentId(function(_studentId) {
                     $scope.studentId = _studentId;
                     $scope.$apply();
-                    $scope.$watch('studentId', function(newValue, oldValue) {
+                    $scope.$watch('studentId', function(newValue) {
                         console.log('studentId has changed');
                         $scope.saving++;
                         prefs.setStudentId(newValue, function() {
