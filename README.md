@@ -1,5 +1,9 @@
 esse3-auto-login-chrome
 =======================
+![](raw/promo-marquee.png)
+
+
+[![Get it on Chrome Webstore](https://developers.google.com/chrome/web-store/images/branding/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/esse3-auto-login/bppbjdndicdpdnlknopokebknnnoehdj)
 
 **Esse3 Auto Login** is a Chrome extension that automatically logs you in your university esse3 portal.
 
@@ -10,7 +14,7 @@ No, seriously, the session expires in 10 minutes or so.
 Istruzioni
 ----------
 
-1. Installare l'estensione dal [Chrome Web Store]().
+1. Installare l'estensione dal [Chrome Web Store](https://chrome.google.com/webstore/detail/esse3-auto-login/bppbjdndicdpdnlknopokebknnnoehdj).
 2. Andare nelle impostazioni ed inserire
 	* username e password
 	* indirizzo del portale esse3 comprensivo di slash "/" finale, ad esempio `http://www.studenti.ict.uniba.it/`
@@ -25,7 +29,7 @@ Per il changelog completo guarda [CHANGELOG.md](CHANGELOG.md).
 Autore
 ------
 
-Estensione realizzata da **[Francesco Pontillo](francescopontillo+e3al@gmail.com)**.
+Estensione realizzata da **[Francesco Pontillo](mailto:francescopontillo+e3al@gmail.com)**.
 
 Licenza
 -------

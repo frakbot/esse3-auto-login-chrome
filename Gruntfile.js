@@ -324,15 +324,13 @@ module.exports = function (grunt) {
 
   /*
    Basic idea: task release:{major|minor|patch}:note that:
-     - bumps the major/minor/build version number in manifest.json
-     - creates a new array object in app/versions.json and writes
+     - bumps the major/minor/build version number in manifest.json, bower.json, package.json
+     - creates a new array object in app/history.json and writes
        * the new version number
        * the current date
        * the input release note
-     - updates the latest version in app/versions.json
-     - updates the new version number in bower.json, package.json
      - MAYBE update CHANGELOG.md
-     - the extension will read versions.json for history information
+     - the extension already reads history.json to get history information
    */
   grunt.registerTask('release', function (bump, note) {
     bump = (!bump || bump === 'build' ? 'patch': bump);
@@ -344,8 +342,10 @@ module.exports = function (grunt) {
 
     // Read the new bumped version
     // TODO
+    var version = 'X.X.X';
     // Get the date
     var date = new Date().toString();
+    grunt.log("Saving new release " + version + " with date " + date + " and note: '" + note + "'.");
 
     // Execute the regular build task
     grunt.task.run('build');
