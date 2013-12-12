@@ -266,11 +266,14 @@ module.exports = function (grunt) {
       dist: {
         options: {
           buildnumber: false,
-          background: 'scripts/background.js'
+          background: {
+            target: 'scripts/background.js'
+          }
         },
         src: '<%= yeoman.app %>',
         dest: '<%= yeoman.dist %>'
       }
+
     },
     bumpup: {
       options: {
@@ -345,7 +348,7 @@ module.exports = function (grunt) {
     var version = 'X.X.X';
     // Get the date
     var date = new Date().toString();
-    grunt.log("Saving new release " + version + " with date " + date + " and note: '" + note + "'.");
+    grunt.log('Saving new release ' + version + ' with date ' + date + ' and note: "' + note + '".');
 
     // Execute the regular build task
     grunt.task.run('build');
